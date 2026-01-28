@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework Tracker by aishwar</title>
+    <!-- adding logo-icon -->
+    <link rel="icon" href="./images/images.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- main container for overall layout -->
+    <div class="container">
+            <h1 class="mainHeading"> "Student Task Manager" <sub id="myname"><i>by aishwar</i></sub></h1>
+
+        <h1 class="mainHeading">📚 Homework Tracker</h1>
+        
+        <!-- section for adding a task -->
+        <div class="add-task-section">
+            <input type="text" id="taskInput" placeholder="Enter your homework task..." maxlength="200">
+            <button id="addButton">Add Task</button>
+        </div>
+        
+        <!-- this is the task section -->
+        <div class="tasks-section">
+            <h2 class ="mainHeading">Your Tasks</h2>
+            <ul id="tasksList"></ul>
+            <div id="emptyState" class="empty-state">
+                No homework tasks yet. Add one above!
+            </div>
+        </div>
+    </div>
+    
+    <!-- linking javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
